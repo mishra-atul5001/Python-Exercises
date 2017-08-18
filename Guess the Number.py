@@ -12,8 +12,9 @@ for i in range(0,10):
     if yourGuess == randomNumber or yourGuess == randomNumber2:
         print('Amazing, Well done!')
         score = score + 1
-        print('Current Score' + score)
+        print('Current Score' + str(score))
     else:
         print('Nope, the number is ' + str(randomNumber))
+        score = 0
 
 print('Your score was ' + str(score) + ' out of 10')
